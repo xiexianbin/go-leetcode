@@ -58,7 +58,7 @@ func evalRPN(tokens []string) int {
 }
 
 /* https://leetcode-cn.com/explore/learn/card/queue-stack/218/stack-last-in-first-out-data-structure/880/ */
-func TestT880(t *testing.T) {
+func TestEvalRPN(t *testing.T) {
 	fmt.Println(evalRPN([]string{"2", "1", "+", "3", "*"}))
 	fmt.Println(evalRPN([]string{"4", "13", "5", "/", "+"}))
 	fmt.Println(evalRPN([]string{"10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"}))
