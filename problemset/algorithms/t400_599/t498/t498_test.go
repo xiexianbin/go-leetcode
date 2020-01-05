@@ -7,6 +7,10 @@ import (
 
 func findDiagonalOrder(matrix [][]int) []int {
 	result := []int{}
+	if len(matrix) == 0{
+		return result
+	}
+
 	mx := len(matrix)
 	my := len(matrix[0])
 	maxIndexSum := mx + my - 2
@@ -47,6 +51,8 @@ func findDiagonalOrder(matrix [][]int) []int {
 }
 
 func TestTest(t *testing.T) {
+	fmt.Println(findDiagonalOrder([][]int{}))
+
 	matrix := [][]int{
 		{1, 2, 3},
 		{4, 5, 6},
