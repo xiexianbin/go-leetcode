@@ -2,7 +2,6 @@ package t144
 
 import (
 	"fmt"
-	"testing"
 )
 
 type Stack struct {
@@ -67,7 +66,10 @@ func preorderTraversal(root *TreeNode) []int {
 	return result
 }
 
-func TestT144(t *testing.T) {
+func ExamplePreorderTraversal() {
 	root := &TreeNode{Val: 1, Left: nil, Right: &TreeNode{Val: 2, Left: &TreeNode{Val: 3, Left: nil, Right: nil}, Right: nil}}
 	fmt.Println(preorderTraversal(root))
+
+	// Output:
+	// [1 2 3]
 }

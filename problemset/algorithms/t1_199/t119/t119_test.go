@@ -2,7 +2,6 @@ package t119
 
 import (
 	"fmt"
-	"testing"
 )
 
 func getRow(rowIndex int) []int {
@@ -31,8 +30,12 @@ func getRow2(rowIndex int) []int {
 	return result
 }
 
-func TestGenerate(t *testing.T) {
+func ExampleGenerate() {
 	numRows := 3
 	fmt.Println(getRow(numRows))
 	fmt.Println(getRow2(numRows))
+
+	// Output:
+	//[1 3 3 1]
+	//[1 3 3 1]
 }

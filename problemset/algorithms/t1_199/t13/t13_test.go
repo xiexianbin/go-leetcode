@@ -45,4 +45,6 @@ func TestTest(t *testing.T) {
 	for _, s := range []string{"III", "IV"} {
 		fmt.Println(romanToInt(s))
 	}
+
+	// Output:
 }

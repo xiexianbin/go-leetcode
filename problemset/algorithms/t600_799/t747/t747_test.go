@@ -2,7 +2,6 @@ package t747
 
 import (
 	"fmt"
-	"testing"
 )
 
 func dominantIndex(nums []int) int {
@@ -31,10 +30,14 @@ func dominantIndex(nums []int) int {
 	return index
 }
 
-func TestTest(t *testing.T) {
+func ExampleDominantIndex() {
 	nums := []int{3, 6, 1, 0}
 	fmt.Println(dominantIndex(nums))
 
 	nums = []int{1, 2, 3, 4}
 	fmt.Println(dominantIndex(nums))
+
+	// Output:
+	//1
+	//-1
 }

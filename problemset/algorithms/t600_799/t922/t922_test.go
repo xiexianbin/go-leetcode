@@ -2,7 +2,6 @@ package t922
 
 import (
 	"fmt"
-	"testing"
 )
 
 func sortArrayByParityII(A []int) []int {
@@ -38,9 +37,14 @@ func sortArrayByParityII(A []int) []int {
 	return A
 }
 
-func TestTest(t *testing.T) {
+func ExampleSortArrayByParityII() {
 	as := [][]int{{2, 3, 1, 1, 4, 0, 0, 4, 3, 3}, {2, 3}, {4, 2, 5, 7}}
 	for _, A := range as {
 		fmt.Println(sortArrayByParityII(A))
 	}
+
+	// Output:
+	//[2 3 4 1 0 1 0 3 4 3]
+	//[2 3]
+	//[4 5 2 7]
 }

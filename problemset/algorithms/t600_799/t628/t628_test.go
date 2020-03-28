@@ -3,7 +3,6 @@ package t628
 import (
 	"fmt"
 	"sort"
-	"testing"
 )
 
 func maximumProduct(nums []int) int {
@@ -21,8 +20,13 @@ func maximumProduct(nums []int) int {
 	return max
 }
 
-func TestTest(t *testing.T) {
+func ExampleMaximumProduct() {
 	for _, nums := range [][]int{{-4, -3, -2, -1, 60}, {1, 2, 3}, {1, 2, 3, 4}} {
 		fmt.Println(maximumProduct(nums))
 	}
+
+	// Output:
+	// 720
+	// 6
+	// 24
 }

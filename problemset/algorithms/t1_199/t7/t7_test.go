@@ -2,7 +2,6 @@ package t7
 
 import (
 	"fmt"
-	"testing"
 )
 
 func reverse(x int) int {
@@ -19,8 +18,11 @@ func reverse(x int) int {
 	return int(z)
 }
 
-func TestReverse(t *testing.T) {
+func ExampleReverse() {
 	x := 123
 
 	fmt.Println(reverse(x))
+
+	// Output:
+	// 321
 }

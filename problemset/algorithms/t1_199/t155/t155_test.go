@@ -2,7 +2,6 @@ package t155
 
 import (
 	"fmt"
-	"testing"
 )
 
 type MinStack struct {
@@ -57,7 +56,7 @@ func (this *MinStack) GetMin() int {
  * param_4 := obj.GetMin();
  */
 /* https://leetcode-cn.com/explore/learn/card/queue-stack/218/stack-last-in-first-out-data-structure/877/ */
-func Test218(t *testing.T) {
+func ExampleTest218() {
 	obj := Constructor()
 	obj.Push(-2)
 	obj.Push(0)
@@ -66,4 +65,10 @@ func Test218(t *testing.T) {
 	obj.Pop()
 	fmt.Println(obj.Top())
 	fmt.Println(obj.GetMin())
+
+	// Output:
+	//-3
+	//0
+	//-2
+
 }

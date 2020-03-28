@@ -2,7 +2,6 @@ package t1137
 
 import (
 	"fmt"
-	"testing"
 )
 
 func tribonacci(n int) int {
@@ -21,8 +20,12 @@ func tribonacci(n int) int {
 	return cache[n]
 }
 
-func TestTest(t *testing.T) {
+func ExampleTribonacci() {
 	for _, n := range []int{4, 25} {
 		fmt.Println(tribonacci(n))
 	}
+
+	// Output:
+	//4
+	//1389537
 }

@@ -2,7 +2,6 @@ package t167
 
 import (
 	"fmt"
-	"testing"
 )
 
 func twoSum(numbers []int, target int) []int {
@@ -29,7 +28,11 @@ func twoSum(numbers []int, target int) []int {
 	return []int{m + 1, n + 1}
 }
 
-func TestTest(t *testing.T) {
+func ExampleTwoSum() {
 	fmt.Println(twoSum([]int{2, 7, 11, 15}, 9))
 	fmt.Println(twoSum([]int{2, 7, 11, 15}, 18))
+
+	// Output:
+	// [1 2]
+	// [2 3]
 }

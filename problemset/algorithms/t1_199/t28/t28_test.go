@@ -24,4 +24,6 @@ func TestT28(t *testing.T) {
 	haystack := "hello"
 	needle := "lo"
 	fmt.Println(strStr(haystack, needle))
+
+	// Output:
 }

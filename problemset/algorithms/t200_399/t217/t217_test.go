@@ -3,7 +3,6 @@ package t217
 import (
 	"fmt"
 	"sort"
-	"testing"
 )
 
 func containsDuplicate(nums []int) bool {
@@ -16,8 +15,13 @@ func containsDuplicate(nums []int) bool {
 	return false
 }
 
-func TestTest(t *testing.T) {
+func ExampleContainsDuplicate() {
 	for _, nums := range [][]int{{1, 2, 3, 1}, {1, 2, 3, 4}, {1, 1, 1, 3, 3, 4, 3, 2, 4, 2}} {
 		fmt.Println(containsDuplicate(nums))
 	}
+
+	// Output:
+	//true
+	//false
+	//true
 }

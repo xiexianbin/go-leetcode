@@ -3,7 +3,6 @@ package t541
 import (
 	"fmt"
 	"strings"
-	"testing"
 )
 
 func reverseString(s []string) string {
@@ -49,10 +48,15 @@ func reverseStr(s string, k int) string {
 	return strings.Join(result, "")
 }
 
-func TestTest(t *testing.T) {
+func ExampleReverseStr() {
 	strs := []string{"abcdefg", "abcdefg", "abcdef"}
 	ks := []int{4, 2, 2}
 	for k, v := range strs {
 		fmt.Println(reverseStr(v, ks[k]))
 	}
+
+	// Output:
+	//dcbaefg
+	//bacdfeg
+	//bacdfe
 }

@@ -3,7 +3,6 @@ package t268
 import (
 	"fmt"
 	"sort"
-	"testing"
 )
 
 func missingNumber(nums []int) int {
@@ -25,8 +24,15 @@ func missingNumber(nums []int) int {
 	return -1
 }
 
-func TestTest(t *testing.T) {
+func ExampleMissingNumber() {
 	for _, nums := range [][]int{{}, {0}, {3, 0, 1}, {9, 6, 4, 2, 3, 5, 7, 0, 1}, {1, 2, 3}} {
 		fmt.Println(missingNumber(nums))
 	}
+
+	// Output:
+	//0
+	//1
+	//2
+	//8
+	//0
 }

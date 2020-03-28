@@ -1,10 +1,7 @@
 package t1
 
 import (
-	"testing"
-
-	"gotest.tools/assert"
-	is "gotest.tools/assert/cmp"
+	"fmt"
 )
 
 func twoSum(nums []int, target int) []int {
@@ -34,9 +31,10 @@ func twoSum(nums []int, target int) []int {
 	return []int{}
 }
 
-func TestTwoSum(t *testing.T) {
+func ExampleTwoSum() {
 	nums := []int{2, 7, 11, 15}
-	target := 9
+	fmt.Println(twoSum(nums, 9))
 
-	assert.Assert(t, is.DeepEqual(twoSum(nums, target), []int{0, 1}))
+	// Output:
+	// [0 1]
 }

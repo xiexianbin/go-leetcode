@@ -22,4 +22,6 @@ func TestTest(t *testing.T) {
 	for _, n := range []int{1, 2, 3} {
 		fmt.Println(climbStairs(n))
 	}
+
+	// Output:
 }

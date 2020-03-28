@@ -2,9 +2,15 @@ package t
 
 import (
 	"fmt"
-	"testing"
 )
 
-func TestTest(t *testing.T) {
+func T1() {
 	fmt.Println("Hello World!")
+}
+
+func ExampleT2(){
+	T1()
+
+	// Output:
+	// Hello World!
 }

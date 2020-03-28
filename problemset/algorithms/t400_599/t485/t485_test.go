@@ -2,7 +2,6 @@ package t485
 
 import (
 	"fmt"
-	"testing"
 )
 
 func findMaxConsecutiveOnes(nums []int) int {
@@ -26,6 +25,9 @@ func findMaxConsecutiveOnes(nums []int) int {
 	return maxCount
 }
 
-func TestTest(t *testing.T) {
+func ExampleFindMaxConsecutiveOnes() {
 	fmt.Println(findMaxConsecutiveOnes([]int{1, 1, 0, 1, 1, 1}))
+
+	// Output:
+	// 3
 }

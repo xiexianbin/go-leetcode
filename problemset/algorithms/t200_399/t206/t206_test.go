@@ -2,7 +2,6 @@ package t206
 
 import (
 	"fmt"
-	"testing"
 )
 
 type ListNode struct {
@@ -42,7 +41,7 @@ func reverseList(head *ListNode) *ListNode {
 	return p
 }
 
-func TestTest(t *testing.T) {
+func ExampleReverseList() {
 	head := &ListNode{Val: 1, Next: &ListNode{Val: 2, Next: &ListNode{Val: 3, Next: &ListNode{Val: 4, Next: &ListNode{Val: 5, Next: nil}}}}}
 	h := reverseList(head)
 	//h := reverseList2(head)
@@ -54,4 +53,7 @@ func TestTest(t *testing.T) {
 		h = h.Next
 	}
 	fmt.Printf("%d\n", h.Val)
+
+	// Output:
+	// 5 4 3 2 1
 }

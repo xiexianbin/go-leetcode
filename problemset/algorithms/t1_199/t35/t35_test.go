@@ -27,4 +27,6 @@ func TestSearchInsert(t *testing.T) {
 	nums := []int{1}
 	target := 1
 	fmt.Println(searchInsert(nums, target))
+
+	// Output:
 }

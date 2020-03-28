@@ -2,7 +2,6 @@ package t349
 
 import (
 	"fmt"
-	"testing"
 )
 
 func duplicateRemoval(nums []int) []int {
@@ -46,11 +45,15 @@ func intersection(nums1 []int, nums2 []int) []int {
 	return result
 }
 
-func TestTest(t *testing.T) {
+func ExampleIntersection() {
 	num1 := [][]int{{1, 2, 2, 1}, {4, 9, 5}}
 	num2 := [][]int{{2, 2}, {9, 4, 9, 8, 4}}
 
 	for i, v := range num1 {
 		fmt.Println(intersection(v, num2[i]))
 	}
+
+	// Output:
+	//[2]
+	//[9 4]
 }

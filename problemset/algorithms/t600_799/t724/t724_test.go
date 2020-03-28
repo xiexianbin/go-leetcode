@@ -2,7 +2,6 @@ package t724
 
 import (
 	"fmt"
-	"testing"
 )
 
 func pivotIndex(nums []int) int {
@@ -20,8 +19,11 @@ func pivotIndex(nums []int) int {
 	return -1
 }
 
-func TestTest(t *testing.T) {
+func ExamplePivotIndex() {
 	//nums := []int{1, 7, 3, 6, 5, 6}
 	nums := []int{1, 2, 3}
 	fmt.Println(pivotIndex(nums))
+
+	// Output:
+	// -1
 }

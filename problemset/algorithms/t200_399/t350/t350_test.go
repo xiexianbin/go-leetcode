@@ -2,7 +2,6 @@ package t350
 
 import (
 	"fmt"
-	"testing"
 )
 
 func intersect(nums1 []int, nums2 []int) []int {
@@ -34,11 +33,16 @@ func intersect(nums1 []int, nums2 []int) []int {
 	return result
 }
 
-func TestTest(t *testing.T) {
+func ExampleIntersect() {
 	num1 := [][]int{{1, 2, 2, 1}, {4, 9, 5}, {3, 1, 2}}
 	num2 := [][]int{{2, 2}, {9, 4, 9, 8, 4}, {1, 1}}
 
 	for i, v := range num1 {
 		fmt.Println(intersect(v, num2[i]))
 	}
+
+	// Output:
+	//[2 2]
+	//[4 9]
+	//[1]
 }

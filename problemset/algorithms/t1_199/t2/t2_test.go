@@ -2,7 +2,6 @@ package t2
 
 import (
 	"fmt"
-	"testing"
 )
 
 /**
@@ -55,7 +54,7 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	return h.Next
 }
 
-func TestAddTwoNumbers(t *testing.T) {
+func ExampleAddTwoNumbers() {
 	l1 := &ListNode{Val:2, Next:&ListNode{Val:4, Next:&ListNode{Val:3, Next:nil}}}
 	l2 := &ListNode{Val:5, Next:&ListNode{Val:6, Next:&ListNode{Val:4, Next:nil}}}
 	r := addTwoNumbers(l1, l2)
@@ -65,4 +64,9 @@ func TestAddTwoNumbers(t *testing.T) {
 		fmt.Println(r.Val)
 		r = r.Next
 	}
+
+	// Output:
+	// 7
+	// 7
+	// 0
 }

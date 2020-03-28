@@ -48,4 +48,6 @@ func TestCountAndSay(t *testing.T) {
 	for _, i := range []int{10, 6, 1, 2, 3, 4, 5} {
 		fmt.Println(countAndSay(i))
 	}
+
+	// Output:
 }

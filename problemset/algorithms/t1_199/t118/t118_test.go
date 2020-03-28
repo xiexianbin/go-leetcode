@@ -2,7 +2,6 @@ package t118
 
 import (
 	"fmt"
-	"testing"
 )
 
 func generate(numRows int) [][]int {
@@ -21,7 +20,7 @@ func generate(numRows int) [][]int {
 	return result
 }
 
-func TestGenerate(t *testing.T) {
+func ExampleGenerate() {
 	numRows := 5
 	result := generate(numRows)
 	for i := 0; i < numRows; i++ {
@@ -30,4 +29,11 @@ func TestGenerate(t *testing.T) {
 		}
 		fmt.Println()
 	}
+
+	// Output:
+	//1
+	//11
+	//121
+	//1331
+	//14641
 }

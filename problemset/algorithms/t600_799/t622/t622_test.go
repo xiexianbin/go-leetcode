@@ -2,7 +2,6 @@ package t622
 
 import (
 	"fmt"
-	"testing"
 )
 
 type MyCircularQueue struct {
@@ -96,7 +95,7 @@ func (this *MyCircularQueue) IsFull() bool {
  */
 
 /* https://leetcode-cn.com/explore/learn/card/queue-stack/216/queue-first-in-first-out-data-structure/865/ */
-func Test216(t *testing.T) {
+func ExampleMyCircularQueue() {
 	k := 3
 	obj := Constructor(k)
 	fmt.Println(obj.EnQueue(1))
@@ -117,4 +116,21 @@ func Test216(t *testing.T) {
 
 	fmt.Println(obj.Front())
 	fmt.Println(obj.IsEmpty())
+
+	// Output:
+	//true
+	//true
+	//true
+	//false
+	//3
+	//true
+	//true
+	//true
+	//4
+	//true
+	//true
+	//true
+	//false
+	//-1
+	//true
 }

@@ -3,7 +3,6 @@ package t3
 import (
 	"fmt"
 	"strings"
-	"testing"
 )
 
 func allDiff(str string, s int, e int) bool {
@@ -40,8 +39,13 @@ func lengthOfLongestSubstring(s string) int {
 	return max
 }
 
-func TestTest(t *testing.T) {
+func ExampleLengthOfLongestSubstring() {
 	for _, s := range []string{"abcabcbb", "bbbbb", "pwwkew"} {
 		fmt.Println(lengthOfLongestSubstring(s))
 	}
+
+	// Output:
+	// 3
+	// 1
+	// 3
 }

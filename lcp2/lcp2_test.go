@@ -2,7 +2,6 @@ package lcp2
 
 import (
 	"fmt"
-	"testing"
 )
 
 func gcd(m, n int) []int {
@@ -40,10 +39,17 @@ func fraction(cont []int) []int {
 	return gcd(n, m)
 }
 
-func TestTest(t *testing.T) {
+func ExampleFraction() {
 	conts := [][]int{{0, 2147483647}, {3}, {12, 11}, {3, 2, 0, 2}, {0, 0, 3}}
 
 	for _, v := range conts {
 		fmt.Println(fraction(v))
 	}
+
+	// Output:
+	// [1 2147483647]
+	// [3 1]
+	// [133 11]
+	// [13 4]
+	// [3 1]
 }

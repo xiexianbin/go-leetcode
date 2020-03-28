@@ -58,4 +58,6 @@ func TestTest(t *testing.T) {
 		fmt.Printf("%d ", head.Val)
 		head = head.Next
 	}
+
+	// Output:
 }

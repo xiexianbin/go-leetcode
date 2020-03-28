@@ -71,4 +71,6 @@ func TestMergeTwoLists(t *testing.T) {
 			fmt.Print(r.Val)
 		}
 	}
+
+	// Output:
 }

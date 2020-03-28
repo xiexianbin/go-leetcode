@@ -3,7 +3,6 @@ package t557
 import (
 	"fmt"
 	"strings"
-	"testing"
 )
 
 func reverseOneWord(s string) string {
@@ -29,9 +28,12 @@ func reverseWords(s string) string {
 	return strings.Join(sL, " ")
 }
 
-func TestTest(t *testing.T) {
+func ExampleReverseWords() {
 	strs := []string{"Let's take LeetCode contest"}
 	for _, s := range strs {
 		fmt.Println(reverseWords(s))
 	}
+
+	// Output:
+	// s'teL ekat edoCteeL tsetnoc
 }

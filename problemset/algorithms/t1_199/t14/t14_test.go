@@ -73,4 +73,6 @@ func TestTest(t *testing.T) {
 		fmt.Println(longestCommonPrefix(strs))
 		fmt.Println(longestCommonPrefix2(strs))
 	}
+
+	// Output:
 }

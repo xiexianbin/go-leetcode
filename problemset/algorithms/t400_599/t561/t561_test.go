@@ -3,7 +3,6 @@ package t561
 import (
 	"fmt"
 	"sort"
-	"testing"
 )
 
 func arrayPairSum(nums []int) int {
@@ -15,8 +14,11 @@ func arrayPairSum(nums []int) int {
 	return sum
 }
 
-func TestTest(t *testing.T) {
+func ExampleArrayPairSum() {
 	for _, nums := range [][]int{{1, 4, 3, 2}} {
 		fmt.Println(arrayPairSum(nums))
 	}
+
+	// Output:
+	// 4
 }

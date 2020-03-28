@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"strconv"
 	"strings"
-	"testing"
 )
 
 func isPalindrome(x int) bool {
@@ -21,8 +20,13 @@ func isPalindrome(x int) bool {
 	return true
 }
 
-func TestTest(t *testing.T) {
+func ExampleIsPalindrome() {
 	for _, x := range []int{121, -121, 10} {
 		fmt.Println(isPalindrome(x))
 	}
+
+	// Output:
+	// true
+	// false
+	// false
 }

@@ -50,4 +50,6 @@ func TestAddBinary(t *testing.T) {
 	b := "1011"
 
 	fmt.Println(addBinary(a, b))
+
+	// Output:
 }

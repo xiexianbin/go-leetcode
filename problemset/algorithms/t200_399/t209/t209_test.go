@@ -3,7 +3,6 @@ package t209
 import (
 	"fmt"
 	"math"
-	"testing"
 )
 
 func minSubArrayLen(s int, nums []int) int {
@@ -33,9 +32,15 @@ func minSubArrayLen(s int, nums []int) int {
 	return 0
 }
 
-func TestTest(t *testing.T) {
+func ExampleMinSubArrayLen() {
 	numss := [][]int{{10, 2, 3}, {5, 1, 3, 5, 10, 7, 4, 9, 2, 8}, {1, 4, 4}, {2, 3, 1, 2, 4, 3}}
 	for k, s := range []int{6, 15, 4, 7} {
 		fmt.Println(minSubArrayLen(s, numss[k]))
 	}
+	
+	// Output:
+	//1
+	//2
+	//1
+	//2
 }

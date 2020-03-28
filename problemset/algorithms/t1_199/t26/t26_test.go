@@ -35,4 +35,6 @@ func removeDuplicates2(nums []int) int {
 func TestT26(t *testing.T) {
 	fmt.Println(removeDuplicates([]int{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}))
 	fmt.Println(removeDuplicates2([]int{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}))
+
+	// Output:
 }

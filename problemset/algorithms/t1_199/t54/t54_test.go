@@ -62,4 +62,6 @@ func TestSpiralOrder(t *testing.T) {
 		{9, 10, 11, 12},
 	}
 	fmt.Println(spiralOrder(matrix))
+
+	// Output:
 }

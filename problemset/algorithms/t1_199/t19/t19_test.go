@@ -52,4 +52,6 @@ func TestTest(t *testing.T) {
 		cur = cur.Next
 	}
 	fmt.Println()
+
+	// Output:
 }

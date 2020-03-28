@@ -36,4 +36,6 @@ func TestValidParentheses(t *testing.T) {
 	for _, s := range str {
 		fmt.Println(isValid(s))
 	}
+
+	// Output:
 }

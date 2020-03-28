@@ -45,4 +45,6 @@ func TestT27(t *testing.T) {
 	for i := 0; i < l; i++ {
 		fmt.Print(nums[i])
 	}
+
+	// Output:
 }

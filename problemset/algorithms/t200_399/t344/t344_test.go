@@ -2,7 +2,6 @@ package t344
 
 import (
 	"fmt"
-	"testing"
 )
 
 //func reverseString(s []byte) {
@@ -38,10 +37,14 @@ func reverseString(s []byte) {
 	switchByte(s, 0, len(s)-1)
 }
 
-func TestTest(t *testing.T) {
+func ExampleReverseString() {
 	strs := [][]byte{[]byte("hello"), []byte("Hannah")}
 	for _, s := range strs {
 		reverseString(s)
 		fmt.Println(string(s))
 	}
+
+	// Output:
+	//olleh
+	//hannaH
 }

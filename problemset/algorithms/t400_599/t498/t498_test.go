@@ -2,7 +2,6 @@ package t498
 
 import (
 	"fmt"
-	"testing"
 )
 
 func findDiagonalOrder(matrix [][]int) []int {
@@ -50,7 +49,7 @@ func findDiagonalOrder(matrix [][]int) []int {
 	return result
 }
 
-func TestTest(t *testing.T) {
+func ExampleFindDiagonalOrder() {
 	fmt.Println(findDiagonalOrder([][]int{}))
 
 	matrix := [][]int{
@@ -66,4 +65,9 @@ func TestTest(t *testing.T) {
 		{9, 10, 11, 12},
 	}
 	fmt.Println(findDiagonalOrder(matrix))
+
+	// Output:
+	//[]
+	//[1 2 4 7 5 3 6 8 9]
+	//[1 2 5 9 6 3 4 7 10 11 8 12]
 }

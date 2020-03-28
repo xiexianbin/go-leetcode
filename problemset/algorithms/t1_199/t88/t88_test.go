@@ -25,4 +25,6 @@ func TestMerge(t *testing.T) {
 	num2 := []int{2, 5, 6}
 	merge(num1, 3, num2, 3)
 	fmt.Println(num1)
+
+	// Output:
 }

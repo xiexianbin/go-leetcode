@@ -3,7 +3,6 @@ package t151
 import (
 	"fmt"
 	"strings"
-	"testing"
 )
 
 func reverseWords(s string) string {
@@ -30,8 +29,13 @@ func reverseWords(s string) string {
 	return strings.Join(sL[:n], " ")
 }
 
-func TestTest(t *testing.T) {
+func ExampleReverseWords() {
 	for _, s := range []string{"a good   example", "  hello world!  ", "the sky is blue"} {
 		fmt.Println(reverseWords(s))
 	}
+
+	// Output:
+	//example good a
+	//world! hello
+	//blue is sky the
 }

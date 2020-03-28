@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"strconv"
 	"strings"
-	"testing"
 )
 
 func dayOfYear(date string) int {
@@ -39,8 +38,14 @@ func isLeepYear(y int) bool {
 	return false
 }
 
-func TestTest(t *testing.T) {
+func ExampleDayOfYear() {
 	for _, date := range []string{"2019-01-09", "2019-02-10", "2003-03-01", "2004-03-01"} {
 		fmt.Println(dayOfYear(date))
 	}
+
+	// Output:
+	//9
+	//41
+	//60
+	//61
 }

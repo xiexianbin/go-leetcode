@@ -2,7 +2,6 @@ package t448
 
 import (
 	"fmt"
-	"testing"
 )
 
 func findDisappearedNumbers(nums []int) []int {
@@ -29,6 +28,9 @@ func findDisappearedNumbers(nums []int) []int {
 	return result
 }
 
-func TestTest(t *testing.T) {
+func ExampleFindDisappearedNumbers() {
 	fmt.Println(findDisappearedNumbers([]int{4, 3, 2, 7, 8, 2, 3, 1}))
+
+	// Output:
+	// [5 6]
 }

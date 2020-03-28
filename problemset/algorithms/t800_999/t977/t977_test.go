@@ -3,7 +3,6 @@ package t977
 import (
 	"fmt"
 	"sort"
-	"testing"
 )
 
 func sortedSquares(A []int) []int {
@@ -14,8 +13,12 @@ func sortedSquares(A []int) []int {
 	return A
 }
 
-func TestTest(t *testing.T) {
+func ExampleSortedSquares() {
 	for _, A := range [][]int{{-4, -1, 0, 3, 10}, {-7, -3, 2, 3, 11}} {
 		fmt.Println(sortedSquares(A))
 	}
+
+	// Output:
+	//[0 1 9 16 100]
+	//[4 9 9 49 121]
 }

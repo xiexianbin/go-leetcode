@@ -40,4 +40,6 @@ func TestTest(t *testing.T) {
 		head = head.Next
 	}
 	fmt.Println()
+
+	// Output:
 }

@@ -34,4 +34,6 @@ func TestTest(t *testing.T) {
 	for k, v := range d {
 		fmt.Println(myPow(k, v))
 	}
+
+	// Output:
 }

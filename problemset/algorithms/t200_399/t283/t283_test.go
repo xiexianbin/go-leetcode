@@ -2,7 +2,6 @@ package t283
 
 import (
 	"fmt"
-	"testing"
 )
 
 func moveZeroes(nums []int) {
@@ -26,9 +25,12 @@ func moveZeroes(nums []int) {
 	}
 }
 
-func TestTest(t *testing.T) {
+func ExampleMoveZeroes() {
 	for _, nums := range [][]int{{0, 1, 0, 3, 12}} {
 		moveZeroes(nums)
 		fmt.Println(nums)
 	}
+
+	// Output:
+	//[1 3 12 0 0]
 }

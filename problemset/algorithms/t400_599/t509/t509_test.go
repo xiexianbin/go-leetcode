@@ -2,7 +2,6 @@ package t509
 
 import (
 	"fmt"
-	"testing"
 )
 
 func fib(N int) int {
@@ -63,8 +62,17 @@ func fib(N int) int {
 //	return reco_fib(N)
 //}
 
-func TestTest(t *testing.T) {
+func ExampleFib() {
 	for _, i := range []int{0, 2, 3, 4, 5, 6, 7} {
 		fmt.Println(fib(i))
 	}
+
+	// Output:
+	//0
+	//1
+	//2
+	//3
+	//5
+	//8
+	//13
 }
