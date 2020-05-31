@@ -3,15 +3,14 @@ package t68
 import (
 	"fmt"
 	"strings"
-	"testing"
 )
 
 func lengthOfLastWord(s string) int {
+	s = strings.TrimRight(s, " ")
+
 	if len(s) == 0 {
 		return 0
 	}
-
-	s = strings.TrimRight(s, " ")
 
 	sList := strings.Split(s, " ")
 	ls := sList[len(sList)-1]
@@ -26,11 +25,15 @@ func lengthOfLastWord(s string) int {
 	return len(ls)
 }
 
-func TestMerge(t *testing.T) {
+func ExampleLengthOfLastWord() {
 	fmt.Println(lengthOfLastWord("Hello World"))
-	fmt.Println(lengthOfLastWord("Hello Wor2ld"))
 	fmt.Println(lengthOfLastWord("Hello World "))
 	fmt.Println(lengthOfLastWord("a "))
+	fmt.Println(lengthOfLastWord(""))
 
 	// Output:
+	// 5
+	// 5
+	// 1
+	// 0
 }
