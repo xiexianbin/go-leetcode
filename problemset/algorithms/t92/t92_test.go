@@ -1,4 +1,4 @@
-package t
+package t92
 
 import (
 	"fmt"

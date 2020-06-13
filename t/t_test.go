@@ -4,12 +4,12 @@ import (
 	"fmt"
 )
 
-func T1() {
+func T() {
 	fmt.Println("Hello World!")
 }
 
-func ExampleT2(){
-	T1()
+func ExampleT(){
+	T()
 
 	// Output:
 	// Hello World!

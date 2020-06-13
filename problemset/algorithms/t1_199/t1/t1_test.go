@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func twoSum(nums []int, target int) []int {
+func twoSum2(nums []int, target int) []int {
 	//l := len(nums)
 	//for i := 0; i < l; i++ {
 	//	for j := 0; j < l; j++ {
@@ -23,12 +23,25 @@ func twoSum(nums []int, target int) []int {
 	l := len(nums)
 	for i, num := range nums {
 		for j := i + 1; j < l; j++ {
-			if target - num == nums[j] {
+			if target-num == nums[j] {
 				return []int{i, j}
 			}
 		}
 	}
 	return []int{}
+}
+
+func twoSum(nums []int, target int) []int {
+	ansMap := map[int]int{}
+	for i := 0; i < len(nums); i++ {
+		if index, ok := ansMap[nums[i]]; ok {
+			return []int{index, i}
+		} else {
+			ansMap[target-nums[i]] = i
+		}
+	}
+
+	return []int{-1, -1}
 }
 
 func ExampleTwoSum() {
