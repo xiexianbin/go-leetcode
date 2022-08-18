@@ -35,5 +35,5 @@ func ExampleLongestWord() {
 	}
 	// Output:
 	// world
-	// apple
+	// banana
 }

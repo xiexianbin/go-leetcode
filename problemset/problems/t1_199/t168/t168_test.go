@@ -13,11 +13,11 @@ func convertToTitle(n int) string {
 				ans = append(ans, "Z")
 				n = n/26 - 1
 			} else {
-				ans = append(ans, string(n%26+64))
+				ans = append(ans, string(rune(n%26+64)))
 				n = n / 26
 			}
 		} else {
-			ans = append(ans, string(n+64))
+			ans = append(ans, string(rune(n+64)))
 			break
 		}
 	}
