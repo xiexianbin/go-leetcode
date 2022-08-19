@@ -6,9 +6,19 @@ import (
 
 func hammingWeight(num uint32) int {
 	count := 0
-	fmt.Println(num)
-	num = num & (-num)
-	fmt.Println(num)
+
+	for {
+		if num%2 == 1 {
+			count++
+		}
+		num = num / 2
+		if num == 1 {
+			count++
+			break
+		} else if num == 0 {
+			break
+		}
+	}
 
 	return count
 }
@@ -19,10 +29,6 @@ func ExampleHammingWeight() {
 	}
 
 	// Output:
-	//521
-	//1
-	//0
-	//2097152
-	//2097152
-	//0
+	// 3
+	// 1
 }
