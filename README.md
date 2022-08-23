@@ -10,3 +10,23 @@
 ```
 git clone git@github.com:xiexianbin/leetcode-golang.git leetcode
 ```
+
+## test
+
+- test one case
+
+```
+go test -v ./...
+```
+
+- test case in special dir
+
+```
+go test -v ./lcp/...
+```
+
+- test one case
+
+```
+go test ./<path-to-file>.go
+```
