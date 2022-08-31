@@ -2,15 +2,52 @@ package t977
 
 import (
 	"fmt"
-	"sort"
 )
 
-func sortedSquares(A []int) []int {
-	for i := 0; i < len(A); i++ {
-		A[i] = A[i] * A[i]
+//func sortedSquares(A []int) []int {
+//	for i := 0; i < len(A); i++ {
+//		A[i] = A[i] * A[i]
+//	}
+//	sort.Ints(A)
+//	return A
+//}
+
+func sortedSquares(nums []int) []int {
+	lastNagativeIndex := 0
+	n := len(nums)
+	for i := 0; i < n; i++ {
+		if nums[i] < 0 {
+			lastNagativeIndex = i
+		} else {
+			break
+		}
 	}
-	sort.Ints(A)
-	return A
+
+	ans := make([]int, 0, n)
+	i, j := lastNagativeIndex, lastNagativeIndex+1
+	for ; 0 <= i || j < n; {
+		if i < 0 && j < n {
+			ans = append(ans, nums[j]*nums[j])
+			j++
+			continue
+		}
+		if j >= n && i >= 0 {
+			ans = append(ans, nums[i]*nums[i])
+			i--
+			continue
+		}
+		di := nums[i] * nums[i]
+		dj := nums[j] * nums[j]
+		if di > dj {
+			ans = append(ans, dj)
+			j++
+		} else {
+			ans = append(ans, di)
+			i--
+		}
+	}
+
+	return ans
 }
 
 func ExampleSortedSquares() {
