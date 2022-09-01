@@ -43,6 +43,6 @@ func ExampleTopKFrequent() {
 	fmt.Println(r2)
 
 	// Output:
-	// [2 1]
+	// [1 2]
 	// [1 2]
 }
