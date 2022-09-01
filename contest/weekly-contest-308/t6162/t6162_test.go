@@ -52,5 +52,5 @@ func ExampleT() {
 	fmt.Println(garbageCollection([]string{"G", "P", "GP", "GG"}, []int{2, 4, 3}))
 
 	// Output:
-	// Hello World!
+	// 21
 }
