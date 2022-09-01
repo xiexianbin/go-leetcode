@@ -35,9 +35,14 @@ func topKFrequent(nums []int, k int) []int {
 }
 
 func ExampleTopKFrequent() {
-	fmt.Println(topKFrequent([]int{1, 2}, 2))
-	fmt.Println(topKFrequent([]int{1, 1, 1, 2, 2, 3}, 2))
+	r1 := topKFrequent([]int{1, 2}, 2)
+	sort.Ints(r1)
+	fmt.Println(r1)
+	r2 := topKFrequent([]int{1, 1, 1, 2, 2, 3}, 2)
+	sort.Ints(r2)
+	fmt.Println(r2)
 
 	// Output:
+	// [2 1]
 	// [1 2]
 }

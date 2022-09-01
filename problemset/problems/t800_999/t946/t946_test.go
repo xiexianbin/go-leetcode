@@ -31,5 +31,5 @@ func ExampleValidateStackSequences() {
 
 	// Output:
 	// true
-	// ture
+	// true
 }

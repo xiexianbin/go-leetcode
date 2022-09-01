@@ -23,5 +23,5 @@ func ExampleMaxProduct() {
 	fmt.Println(maxProduct([]int{2, 4, 5, 1}))
 
 	// Output:
-	// Hello World!
+	// 12
 }
