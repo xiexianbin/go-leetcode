@@ -2,6 +2,7 @@ package t779
 
 import (
 	"fmt"
+	"sort"
 )
 
 func kthGrammar(n int, k int) int {
@@ -19,12 +20,13 @@ func kthGrammar(n int, k int) int {
 
 func ExampleKthGrammar() {
 	d := map[int]int{1: 1, 2: 1, 4: 5}
+	r := []int{}
 	for k, v := range d {
-		fmt.Println(kthGrammar(k, v))
+		r = append(r, kthGrammar(k, v))
 	}
+	sort.Ints(r)
+	fmt.Println(r)
 
 	// Output:
-	// 0
-	// 0
-	// 1
+	// [0 0 1]
 }

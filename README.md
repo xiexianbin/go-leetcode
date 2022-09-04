@@ -1,6 +1,6 @@
 # leetcode
 
-[![build-test](https://github.com/xiexianbin/leetcode-golang/actions/workflows/workflow.yaml/badge.svg)](https://github.com/xiexianbin/leetcode-golang/actions/workflows/workflow.yaml)
+[![build-test](https://github.com/xiexianbin/go-leetcode/actions/workflows/workflow.yaml/badge.svg)](https://github.com/xiexianbin/go-leetcode/actions/workflows/workflow.yaml)
 
 - https://leetcode.com/u/xiexianbin/
 - https://leetcode.cn/u/xiexianbin/
@@ -8,7 +8,7 @@
 ## clone
 
 ```
-git clone git@github.com:xiexianbin/leetcode-golang.git leetcode
+git clone git@github.com:xiexianbin/go-leetcode.git leetcode
 ```
 
 ## test
